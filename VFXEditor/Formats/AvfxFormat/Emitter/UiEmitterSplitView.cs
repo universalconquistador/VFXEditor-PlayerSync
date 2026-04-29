@@ -24,20 +24,20 @@ namespace VfxEditor.AvfxFormat {
         }
 
         protected override bool DrawLeftItem( AvfxEmitterItem item, int idx ) {
-            using var _ = ImRaii.PushId( idx );
+            //using var _ = ImRaii.PushId( idx );
 
-            using( var style = ImRaii.PushStyle(ImGuiStyleVar.FramePadding, new Vector2(0f, 0f))) {
-                var enabled = item.GetEnabledToggle();
-                if( ImGui.Checkbox( "##Enable", ref enabled ) ) {
-                    item.SetEnableToggle( enabled );
-                }
-                ImGui.SameLine();
-            }
+            //using( var style = ImRaii.PushStyle(ImGuiStyleVar.FramePadding, new Vector2(0f, 0f))) {
+            //    var enabled = item.GetEnabledToggle();
+            //    if( ImGui.Checkbox( "##Enable", ref enabled ) ) {
+            //        item.SetEnableToggle( enabled );
+            //    }
+            //    ImGui.SameLine();
+            //}
 
-            if( ImGui.Selectable( item.GetText(), Selected == item ) ) {
-                OnSelect( item );
-                Selected = item;
-            }
+            //if( ImGui.Selectable( item.GetText(), Selected == item ) ) {
+            //    OnSelect( item );
+            //    Selected = item;
+            //}
             return false;
         }
 
