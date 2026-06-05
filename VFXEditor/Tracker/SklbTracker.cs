@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using VfxEditor.Ui.Tools;
+using ObjectType = FFXIVClientStructs.FFXIV.Client.Graphics.Scene.ObjectType;
 
 namespace VfxEditor.Tracker {
     public unsafe class SklbTracker : Tracker {
